@@ -18,5 +18,7 @@ from django.contrib import admin
 from focus_ai import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.HomePage.as_view(), name='home')
+    url(r'^$', views.HomePage.as_view(), name='home'),
+    url(r'^ajax/post_user_data/$', views.post_user_data, name='uid'),
+    url(r'^ajax/post_username/$', views.post_username, name='username'),
 ]
