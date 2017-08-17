@@ -2,7 +2,7 @@ from django.views.generic import TemplateView
 from django.http import JsonResponse
 
 class HomePage(TemplateView):
-	template_name = 'home.html'
+	template_name = 'index.html'
 
 
 def post_user_data(request):
