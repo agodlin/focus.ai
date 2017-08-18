@@ -28,7 +28,8 @@
 	    {% if user.is_authenticated %}
 
 	    {% else %}
-	    <li><a href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
+	    <li><a href="{% url 'accounts:fb-login' %}" class="btn btn-simple">FB Log in</a></li>
+	    <li><a href="{% url 'accounts:ig-login' %}" class="btn btn-simple">Instagram Log in</a></li>
 
 	    {% endif %}
 	</ul>
