@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls', namespace='accounts')),
     url(r'^ajax/post_user_data/$', views.post_user_data, name='uid'),
     url(r'^ajax/post_username/$', views.post_username, name='username'),
+    url(r'^#access_token$', views.print_instagram_token, name='tocken'),
 ]

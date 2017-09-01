@@ -2,9 +2,16 @@
 
 {% block base_content %}
 <h1>Instagram</h1>
+<script type="text/javascript">
+    function Redirect()
+    {
+    window.location="https://instagram.com/oauth/authorize/?client_id=242b0caf21c745c480bcd50a109f09cb&redirect_uri=http://localhost:8000&response_type=token";
+    }
+</script>
+
 
 <a href="https://instagram.com/oauth/authorize/?client_id=242b0caf21c745c480bcd50a109f09cb&redirect_uri=http://localhost:8000&response_type=token">Visit Instagram</a>
-
+<button onclick="Redirect()">Click me</button>
 {% endblock base_content %}
 
 

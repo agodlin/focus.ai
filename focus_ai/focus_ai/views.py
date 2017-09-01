@@ -18,3 +18,11 @@ def post_username(request):
         print('Got from frontend', name)
         data = {}
         return JsonResponse(data)
+
+def print_instagram_token(request):
+        print(request)
+        data = {}
+        return JsonResponse(data)
+
+
+
